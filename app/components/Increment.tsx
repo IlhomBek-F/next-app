@@ -7,8 +7,6 @@ function Increment() {
     let a;
     if(typeof window !== 'undefined') {
         a = localStorage.getItem('a')
-    console.log(a)
-
     }
    
     return (
