@@ -1,11 +1,11 @@
 
 
-function DashboardLayout({children}) {
+function DashboardLayout({ children }) {
 
     return (
         <>
-        <p>Dashboard layout</p>
-        {children}
+            <p>Dashboard layout</p>
+            {children}
         </>
     )
 }
