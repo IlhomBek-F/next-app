@@ -1,17 +1,16 @@
-import { Products } from "@/app/components/Products"
-import { Suspense } from "react"
+import Image from "next/image"
 
-async function DetailPage() {
-
+function ProductDetail({ params }) {
+    console.log(params)
     return (
-        <div className="flex justify-center items-center flex-col">
-            <h1>Producst</h1>
-            <Suspense fallback={'Loading,,,'}>
-                <Products />
-            </Suspense>
-        </div>
+        <>
+            <Image src='https://tse1.mm.bing.net/th?id=OIP.OF59vsDmwxPP1tw7b_8clQHaE8&pid=Api&P=0&h=220'
+                width='200' height='200' alt="img"
 
+            />
+            <p>product page</p>
+        </>
     )
 }
 
-export default DetailPage
+export default ProductDetail
